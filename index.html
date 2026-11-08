@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Мока</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&family=Prata&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <clipPath id="heroClip" clipPathUnits="objectBoundingBox">
+      <path d="M0.17,0 C0.03,0.16 0.02,0.36 0.1,0.52 C0.17,0.67 0.2,0.82 0.15,1 L1,1 L1,0 Z"/>
+    </clipPath>
+    <symbol id="i-bean" viewBox="0 0 24 24"><g transform="rotate(32 12 12)"><ellipse cx="12" cy="12" rx="6.6" ry="9.6"/><path d="M12 2.6c-3.2 3.2 3.2 6.4 0 9.4s3.2 6.2 0 9.4"/></g></symbol>
+    <symbol id="i-flame" viewBox="0 0 24 24"><path d="M12 3c.9 3.2 5 5.2 5 10a5 5 0 0 1-10 0c0-2 .9-3.2 2-4.2.1 1.9.9 2.7 2 2.7-.2-3.2-.9-5 1-8.5z"/></symbol>
+    <symbol id="i-cup" viewBox="0 0 24 24"><path d="M4.5 9.5h11v4.5a5 5 0 0 1-5 5h-1a5 5 0 0 1-5-5z"/><path d="M15.5 10.5H17a2.4 2.4 0 0 1 0 4.8h-1.6"/><path d="M8 3.5c0 1.3 1.2 1.3 1.2 2.6M11.8 3.5c0 1.3 1.2 1.3 1.2 2.6"/></symbol>
+    <symbol id="i-croissant" viewBox="0 0 24 24"><path d="M2.8 15.5C4 10.2 7.8 7 12 7s8 3.2 9.2 8.5c-2.2 1-4.2-.9-5.4-2.2-2.4 1.1-5.2 1.1-7.6 0-1.200 1.300-3.200 3.200-5.400 2.200z"/><path d="M9 8.200l1 5.400M15 8.200l-1 5.400"/></symbol>
+    <symbol id="i-chair" viewBox="0 0 24 24"><path d="M7 3.500h10v8H7z"/><path d="M5.500 11.500h13M7.500 11.500v9M16.500 11.500v9M5.500 16h13"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.200 7-11.200a7 7 0 1 0-14 0C5 14.800 12 21 12 21z"/><circle cx="12" cy="9.800" r="2.500"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4.500 12h15M13.500 6l6 6-6 6"/></symbol>
+    <symbol id="i-tg" viewBox="0 0 24 24"><path d="M21 4.500 3.200 11.200c-.8.300-.8 1.200 0 1.400l4.400 1.400 1.700 5.200c.2.600.9.700 1.300.3l2.400-2.300 4.200 3.100c.5.300 1.100.1 1.200-.5L21.900 5.500c.1-.7-.4-1.200-.9-1z"/><path d="M7.600 14 17 8"/></symbol>
+    <symbol id="i-tt" viewBox="0 0 24 24"><path d="M14 3.500v11a3.800 3.800 0 1 1-3.800-3.800"/><path d="M14 3.500c.3 2.700 2 4.300 4.800 4.500"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path d="M3.600 20.400l1.300-4.300A8.500 8.500 0 1 1 8.100 19.200z"/><path d="M9 8.200c-.4 3.500 3.200 7 6.900 6.600l.8-1.700-2.100-1-1 .9c-1-.4-2-1.400-2.400-2.400l.9-1-1-2.100z"/></symbol>
+  </defs>
+</svg>
+
+<header class="nav" id="nav">
+  <div class="nav-in wrap">
+    <a class="brand" href="#top" aria-label="Мока, наверх">Мока</a>
+    <nav class="links" aria-label="Разделы">
+      <a href="#gallery">Кофейня</a>
+      <a href="#why">Преимущества</a>
+      <a href="#menu">Меню</a>
+      <a href="#popular">Хиты</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="mmenu"><i></i><i></i></button>
+  </div>
+</header>
+<nav class="mmenu" id="mmenu" aria-label="Мобильное меню">
+  <img class="mm-bg" src="img/beans.jpg" alt="" aria-hidden="true">
+  <svg class="ico mm-bean" aria-hidden="true"><use href="#i-bean"/></svg>
+  <div class="mm-links">
+    <a href="#gallery">Кофейня <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    <a href="#why">Преимущества <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    <a href="#menu">Меню <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    <a href="#popular">Хиты <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    <a href="#contacts">Контакты <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+  </div>
+  <div class="mm-foot">
+    <p><b>Ежедневно</b>08:00 – 22:00</p>
+    <div class="mm-soc">
+      <a href="https://t.me/deyz888" target="_blank" rel="noopener" aria-label="Telegram"><svg class="ico" aria-hidden="true"><use href="#i-tg"/></svg></a>
+      <a href="https://www.tiktok.com/@dest_dest6?_r=1&amp;_t=ZG-9BEUNN2UHmi" target="_blank" rel="noopener" aria-label="TikTok"><svg class="ico" aria-hidden="true"><use href="#i-tt"/></svg></a>
+      <a href="https://wa.me/qr/ASNH726JWO5ZJ1" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg></a>
+    </div>
+  </div>
+</nav>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-copy">
+      <div class="mark">
+        <svg class="ico" aria-hidden="true"><use href="#i-bean"/></svg>
+        <div><b>Мока</b><small>Кофе · Еда · Сообщество</small></div>
+      </div>
+      <h1>
+        <span class="hl" style="--i:0"><span>Кофе, который</span></span>
+        <span class="hl" style="--i:1"><span>заставляет</span></span>
+        <span class="hl accent" style="--i:2"><span>остановиться.</span></span>
+      </h1>
+      <div class="rule"></div>
+      <p class="lead">Кофе собственной обжарки, свежая выпечка и место, где можно никуда не спешить.</p>
+      <div class="cta">
+        <a class="btn btn-solid" href="#menu">Смотреть меню <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn-ghost" href="#contacts">Как нас найти</a>
+      </div>
+      <div class="feats">
+        <div class="feat"><svg class="ico" aria-hidden="true"><use href="#i-flame"/></svg>Своя обжарка</div>
+        <div class="feat"><svg class="ico" aria-hidden="true"><use href="#i-croissant"/></svg>Свежая выпечка</div>
+        <div class="feat"><svg class="ico" aria-hidden="true"><use href="#i-chair"/></svg>Тёплая атмосфера</div>
+      </div>
+    </div>
+
+    <div class="hero-media">
+      <div class="hero-photo"><img id="heroImg" src="img/hero.jpg" alt="Сырники с клубникой и шоколадной пастой и капучино у окна"></div>
+      <svg class="hero-line" viewBox="0 0 1 1" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M0.17,0 C0.03,0.16 0.02,0.36 0.1,0.52 C0.17,0.67 0.2,0.82 0.15,1"/></svg>
+      <div class="badge" aria-hidden="true">Свежее зерно<i></i>Живые люди<i></i>Время для себя</div>
+    </div>
+
+    <div class="hero-bar">
+      <span><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg>Адрес скоро добавим</span>
+      <span class="sep" aria-hidden="true"></span>
+      <span>Ежедневно 08:00 – 22:00</span>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="gallery" aria-label="Фотогалерея кофейни">
+    <div class="wrap">
+      <div class="g-head">
+        <div class="rv">
+          <span class="eyebrow">Атмосфера</span>
+          <h2 class="title">Тёплый свет, дерево и неспешный бар</h2>
+        </div>
+        
+      </div>
+    </div>
+    <div class="g-viewport" id="gView">
+      <div class="g-track" id="gTrack">
+        <figure class="g-slide"><div class="g-ph"><img src="img/g1.jpg" alt="Зал с тёплой подсветкой стойки и витриной десертов" draggable="false"></div><figcaption><small>Зал</small><span>Вечерний свет</span></figcaption></figure>
+        <figure class="g-slide"><div class="g-ph"><img src="img/g2.jpg" alt="Чашка эспрессо с зёрнами на тёмном фоне" draggable="false" loading="lazy"></div><figcaption><small>Эспрессо</small><span>Тёмная обжарка</span></figcaption></figure>
+        <figure class="g-slide"><div class="g-ph"><img src="img/g3.jpg" alt="Вход в кофейню с арочными окнами и летней верандой" draggable="false" loading="lazy"></div><figcaption><small>Вход</small><span>Тёплые окна на улице</span></figcaption></figure>
+        <figure class="g-slide"><div class="g-ph"><img src="img/g4.jpg" alt="Тирамису, чизкейки и два латте на деревянном столе" draggable="false" loading="lazy"></div><figcaption><small>Десерты</small><span>Тирамису и чизкейки</span></figcaption></figure>
+        <figure class="g-slide"><div class="g-ph"><img src="img/g5.jpg" alt="Капучино и тирамису с какао на деревянном подносе" draggable="false" loading="lazy"></div><figcaption><small>Десерты</small><span>Тирамису и капучино</span></figcaption></figure>
+        <figure class="g-slide"><div class="g-ph"><img src="img/g6.jpg" alt="Шоколадный торт и латте в стеклянном стакане" draggable="false" loading="lazy"></div><figcaption><small>Десерт дня</small><span>Шоколадный торт</span></figcaption></figure>
+        <figure class="g-slide"><div class="g-ph"><img src="img/g7.jpg" alt="Карамельный десерт и капучино" draggable="false" loading="lazy"></div><figcaption><small>Десерты</small><span>Карамельный десерт</span></figcaption></figure>
+      </div>
+    </div>
+    <div class="wrap"><div class="g-foot"><div class="g-dots" id="gDots" role="group" aria-label="Выбор слайда"></div>
+<div class="g-ctrl">
+          <span class="g-count" id="gCount" aria-live="polite">01 / 07</span>
+          <button class="round prev" id="gPrev" aria-label="Предыдущее фото"><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          <button class="round next" id="gNext" aria-label="Следующее фото"><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+        </div></div></div>
+  </section>
+
+  <!-- STATEMENT -->
+  <section class="statement" id="about">
+    <div class="wrap st-grid">
+      <div class="st-text" id="stText">
+        <h2 id="stH">Мы никуда не спешим. Вы тоже можете.</h2>
+        <p class="rv">Каждая чашка готовится вручную и подаётся без суеты. Остальное время ваше.</p>
+      </div>
+      <div class="arch rv" style="--d:.15s">
+        <img id="archImg" src="img/beans.jpg" alt="Кофейные зёрна в тёплом свете" loading="lazy">
+        <div class="arch-cap">Зерно малых партий</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ADVANTAGES -->
+  <section class="why" id="why">
+    <div class="wrap why-grid">
+      <div class="why-left">
+        <span class="eyebrow rv">Почему Мока</span>
+        <h2 class="title rv" style="--d:.08s">Всё ради хорошей чашки</h2>
+        <div class="why-ph rv" style="--d:.16s"><img id="whyImg" src="img/espresso.jpg" alt="Эспрессо льётся в чашки" loading="lazy"></div>
+      </div>
+      <div class="why-list">
+        <article class="adv rv">
+          <div class="adv-i"><svg class="ico" aria-hidden="true"><use href="#i-flame"/></svg></div>
+          <div><h3>Своя обжарка</h3><p>Берём зерно небольших партий и обжариваем так, чтобы раскрывались сладость и аромат.</p></div>
+        </article>
+        <article class="adv rv" style="--d:.06s">
+          <div class="adv-i"><svg class="ico" aria-hidden="true"><use href="#i-cup"/></svg></div>
+          <div><h3>Работа бариста</h3><p>Каждый напиток готовится вручную: выверенный рецепт, точная температура, аккуратная подача.</p></div>
+        </article>
+        <article class="adv rv" style="--d:.12s">
+          <div class="adv-i"><svg class="ico" aria-hidden="true"><use href="#i-croissant"/></svg></div>
+          <div><h3>Свежая выпечка</h3><p>Круассаны, десерты и завтраки делаем каждое утро из сезонных продуктов.</p></div>
+        </article>
+        <article class="adv rv" style="--d:.18s">
+          <div class="adv-i"><svg class="ico" aria-hidden="true"><use href="#i-chair"/></svg></div>
+          <div><h3>Место, чтобы остаться</h3><p>Тёплый свет, дерево, удобные диваны. Здесь можно работать, встречаться или просто помолчать.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="menu" id="menu">
+    <div class="wrap">
+      <div class="m-head">
+        <div class="rv">
+          <span class="eyebrow">Напитки, выпечка и завтраки</span>
+          <h2 class="title">Меню</h2>
+        </div>
+        <div class="tabs rv" style="--d:.1s" role="tablist" aria-label="Категории меню" id="tabs"></div>
+      </div>
+      <div class="m-grid">
+        <ul class="m-list" id="mList" role="tabpanel" aria-live="polite"></ul>
+        <aside class="preview" aria-hidden="true">
+          <div class="pv" id="pv">
+            <div class="pv-img" id="pvImg"></div>
+            <div class="pv-ph"><svg class="ico" aria-hidden="true"><use href="#i-bean"/></svg></div>
+            <span class="pv-soon">Фото позиции скоро появится</span>
+            <i class="pv-corner a"></i><i class="pv-corner b"></i>
+          </div>
+          <div class="pv-info" id="pvInfo"><div><h3 id="pvName"></h3><p id="pvDesc"></p></div><b id="pvPrice"></b></div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- POPULAR -->
+  <section class="popular" id="popular">
+    <div class="wrap">
+      <div class="p-head">
+        <div class="rv">
+          <span class="eyebrow">Любимое</span>
+          <h2 class="title">Выбор гостей</h2>
+        </div>
+        <a class="btn btn-ghost rv" style="--d:.1s" href="#menu">Всё меню <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="p-grid">
+        <a class="card rv" href="#menu" data-cat="coffee">
+          <div class="c-ph"><img src="img/latte.jpg" alt="Моккачино с рисунком на молоке" loading="lazy"><span class="c-tag">Фирменный</span></div>
+          <div class="c-info"><h3>Моккачино</h3><b>350 ₽</b><p>Эспрессо, шоколад и бархатное молоко</p><span class="round"><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></span></div>
+        </a>
+        <a class="card rv" style="--d:.08s" href="#menu" data-cat="desserts">
+          <div class="c-ph"><img src="img/croissant.jpg" alt="Круассан на деревянном подносе" loading="lazy"><span class="c-tag">Каждое утро</span></div>
+          <div class="c-info"><h3>Круассан сливочный</h3><b>210 ₽</b><p>Хрустящий снаружи, слоистый внутри</p><span class="round"><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></span></div>
+        </a>
+        <a class="card rv" style="--d:.16s" href="#menu" data-cat="coffee">
+          <div class="c-ph"><img src="img/espresso.jpg" alt="Двойной эспрессо" loading="lazy"><span class="c-tag">Классика</span></div>
+          <div class="c-info"><h3>Двойной эспрессо</h3><b>190 ₽</b><p>Плотный вкус, долгое послевкусие</p><span class="round"><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></span></div>
+        </a>
+        <a class="card rv" style="--d:.24s" href="#menu" data-cat="breakfast">
+          <div class="c-ph"><img src="img/hero.jpg" alt="Сырники с клубникой" loading="lazy"><span class="c-tag">Завтрак</span></div>
+          <div class="c-info"><h3>Сырники с клубникой</h3><b>420 ₽</b><p>С ягодами и шоколадной пастой</p><span class="round"><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTS -->
+  <section class="contacts" id="contacts">
+    <div class="wrap ct-grid">
+      <div>
+        <span class="eyebrow rv">Контакты</span>
+        <h2 class="title rv" style="--d:.08s">Заходите, мы рядом</h2>
+        <dl class="rows rv" style="--d:.14s;margin-bottom:0">
+          <div class="row"><dt>Адрес</dt><dd class="soon">Город, улица, дом<small>Точный адрес скоро добавим</small></dd></div>
+          <div class="row"><dt>Часы работы</dt><dd>Ежедневно 08:00 – 22:00<small>Без выходных и перерывов</small></dd></div>
+          <div class="row"><dt>Телефон</dt><dd class="soon">+7 (000) 000-00-00</dd></div>
+          <div class="row"><dt>Почта</dt><dd class="soon">hello@moka.example</dd></div>
+        </dl>
+        <div class="ct-btns rv" style="--d:.2s">
+          <a class="btn btn-ink" href="#" data-soon>Построить маршрут <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn-ghost-ink" href="#menu">Смотреть меню</a>
+        </div>
+      </div>
+      <div class="ct-media rv" style="--d:.1s">
+        <div class="img"><img id="ctImg" src="img/interior.jpg" alt="Интерьер кофейни Мока" loading="lazy"></div>
+        <div class="status" id="status"><i></i><span id="statusText">Сегодня открыто до 22:00</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="f-top">
+      <div class="rv"><h2>Хороший кофе каждый день.</h2></div>
+      <div class="rv" style="--d:.08s">
+        <h4>Мы в соцсетях</h4>
+        <ul>
+          <li><a href="https://t.me/deyz888" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-tg"/></svg>Telegram</a></li>
+          <li><a href="https://www.tiktok.com/@dest_dest6?_r=1&amp;_t=ZG-9BEUNN2UHmi" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-tt"/></svg>TikTok</a></li>
+          <li><a href="https://wa.me/qr/ASNH726JWO5ZJ1" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp</a></li>
+        </ul>
+      </div>
+      <div class="rv" style="--d:.16s">
+        <h4>Разделы</h4>
+        <ul>
+          <li><a href="#gallery">Кофейня</a></li>
+          <li><a href="#menu">Меню</a></li>
+          <li><a href="#popular">Хиты</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <span class="f-word" id="fWord" aria-hidden="true">Мока</span>
+    <div class="f-bot">
+      <span>© 2026 Мока. Все права защищены.</span>
+      <button type="button" id="toTop">Наверх ↑</button>
+    </div>
+    <div class="credit">
+      <img src="img/lynx.png" alt="Lynx Studio">
+      <span>Этот сайт — демонстрационный проект, созданный Lynx Studio.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
